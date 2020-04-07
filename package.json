@@ -1,0 +1,28 @@
+{
+  "name": "i-algorithms",
+  "version": "0.0.3",
+  "description": "Introduction To Algorithms With JavaScript.",
+  "main": "lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziyi2/algorithms"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "dist": "vuepress build docs",
+    "deploy": "npm run dist && gh-pages -d docs/.vuepress/dist",
+    "lint-md": "remark ."
+  },
+  "keywords": [
+    "awesome",
+    "front-end"
+  ],
+  "author": "ziyi2",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^2.2.0",
+    "remark-cli": "^8.0.0",
+    "remark-lint": "^7.0.0",
+    "remark-preset-lint-recommended": "^4.0.0"
+  }
+}
